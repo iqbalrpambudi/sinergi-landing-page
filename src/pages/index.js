@@ -1,6 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import Section from "../components/section"
 import Image from "../components/image"
@@ -10,6 +8,9 @@ import "../assets/css/style.css"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+
+
+    {/* Banner */}
     <Section>
       <div className="row justify-content-center">
         <div
@@ -23,7 +24,26 @@ const IndexPage = () => (
           </p>
         </div>
         <div className="col-lg-5 col-md-9">
-          <Image />
+          <Image name="gatsby-handshake.png"/>
+        </div>
+      </div>
+    </Section>
+
+    {/* Keunggulan */}
+    <Section>
+      <div className="text-center">
+        <h3 className="title-section">Keunggulan</h3>
+        <div className="stripes"></div>
+      </div>
+      <div className="flex-container">
+        <div className="card card-blue">
+          <h4>Bersih</h4>
+        </div>
+        <div className="card card-purple">
+          <h4>Professional</h4>
+        </div>
+        <div className="card card-red">
+          <h4>Bertanggung Jawab</h4>
         </div>
       </div>
     </Section>
