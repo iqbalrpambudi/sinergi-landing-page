@@ -1,0 +1,62 @@
+header {
+  display: block;
+}
+
+header .marquee {
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .marquee span {
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+nav {
+  -webkit-box-shadow: 0px 12px 27px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 12px 27px 0px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem !important;
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-item a {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #2a6693 !important;
+}
+
+.title-screen {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  line-height: 62px;
+  font-size: 48px;
+}
+
+.stripes {
+  width: 100px;
+  height: 10px;
+  background-color: #57AEFF;
+}
+
+.title-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #9D9D9D;
+  margin: 1.5rem 0;
+}
+
+@media screen and (max-width: 920px) {
+  header {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
