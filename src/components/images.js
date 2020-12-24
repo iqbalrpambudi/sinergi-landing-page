@@ -1,0 +1,5 @@
+export {default as Pic1} from '../images/pic1.jpg'
+export {default as Pic2} from '../images/pic2.jpg'
+export {default as Pic3} from '../images/pic3.jpg'
+export {default as Pic4} from '../images/pic4.jpg'
+export {default as Pic5} from '../images/pic5.jpg'
