@@ -54,7 +54,7 @@ const IndexPage = () => {
               flexDirection: `column`,
             }}
           >
-            <h2 className="title-screen">Saya memberikan yang terbaik.</h2>
+            <h1 className="title-screen">Saya memberikan yang terbaik.</h1>
             <div className="stripes"></div>
             <p className="title-description">
               Kami mengutamakan kualitas dan kepuasan pelanggan .
@@ -126,7 +126,7 @@ const IndexPage = () => {
           <div className="c-crd">
             <a className="c-crd__wrap" href="#">
               <div className="c-crd__img">
-                <img src="https://unsplash.it/400/209" />
+                <img src="https://unsplash.it/400/209" alt="images" />
               </div>
               <div className="c-crd__btm">
                 <h3 className="card-title">Sedot WC</h3>
@@ -141,7 +141,7 @@ const IndexPage = () => {
           <div className="c-crd">
             <a className="c-crd__wrap" href="#">
               <div className="c-crd__img">
-                <img src="https://unsplash.it/400/209" />
+                <img src="https://unsplash.it/400/209" alt="images" />
               </div>
               <div className="c-crd__btm">
                 <h3 className="card-title">Service Toilet</h3>
@@ -156,7 +156,7 @@ const IndexPage = () => {
           <div className="c-crd">
             <a className="c-crd__wrap" href="#">
               <div className="c-crd__img">
-                <img src="https://unsplash.it/400/209" />
+                <img src="https://unsplash.it/400/209" alt="sedot wc" />
               </div>
               <div className="c-crd__btm">
                 <h3 className="card-title">Pembuatan Septic Tank</h3>
@@ -171,7 +171,7 @@ const IndexPage = () => {
           <div className="c-crd">
             <a className="c-crd__wrap" href="#">
               <div className="c-crd__img">
-                <img src="https://unsplash.it/400/209" />
+                <img src="https://unsplash.it/400/209" alt="sedot wc"/>
               </div>
               <div className="c-crd__btm">
                 <h3 className="card-title">Sedot Limbah Non B3</h3>
@@ -209,19 +209,19 @@ const IndexPage = () => {
       <Section color="#f1f1f1">
         <div className="image-container">
           <div className="image-card">
-            <img src={Pic1} alt="" />
+            <img src={Pic1} alt="" alt="sedot wc"/>
           </div>
           <div className="image-card">
-            <img src={Pic2} alt="" />
+            <img src={Pic2} alt="" alt="sedot wc"/>
           </div>
           <div className="image-card">
-            <img src={Pic3} alt="" />
+            <img src={Pic3} alt="" alt="sedot wc"/>
           </div>
           <div className="image-card">
-            <img src={Pic4} alt="" />
+            <img src={Pic4} alt="" alt="sedot wc"/>
           </div>
           <div className="image-card">
-            <img src={Pic5} alt="" />
+            <img src={Pic5} alt="" alt="sedot wc"/>
           </div>
         </div>
       </Section>
