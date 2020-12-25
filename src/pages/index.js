@@ -6,6 +6,7 @@ import { Pic1, Pic2, Pic3, Pic4, Pic5 } from "../components/images"
 import SEO from "../components/seo"
 import Carousel from "react-multi-carousel"
 import Map from "../components/map.js"
+import WA from '../images/whatsapp.svg'
 import "../assets/css/style.css"
 import "react-multi-carousel/lib/styles.css"
 
@@ -44,12 +45,12 @@ const IndexPage = () => {
       <SEO title="Home" />
 
       {/* Banner */}
-      <Section>
+      <Section id="home">
         <div className="row justify-content-center">
           <div
             className="col-lg-7 col-md-9"
             style={{
-              minHeight: `300px`,
+              minHeight: `350px`,
               display: `flex`,
               flexDirection: `column`,
             }}
@@ -67,7 +68,7 @@ const IndexPage = () => {
       </Section>
 
       {/* Keunggulan */}
-      <Section>
+      <Section id="keunggulan">
         <div className="text-center">
           <h3 className="title-section">Keunggulan</h3>
           <div className="stripes"></div>
@@ -95,7 +96,7 @@ const IndexPage = () => {
       </Section>
 
       {/* Pelayanan */}
-      <Section color="#f1f1f1">
+      <Section id="pelayanan" color="#f1f1f1">
         <div className="text-center">
           <h3 className="title-section">Pelayanan</h3>
           <div className="stripes"></div>
@@ -186,7 +187,7 @@ const IndexPage = () => {
       </Section>
 
       {/* Contact Cakupan */}
-      <Section>
+      <Section id="cakupan">
         <div className="text-center">
           <h3 className="title-section">Cakupan Wilayah</h3>
           <div className="stripes"></div>
@@ -226,7 +227,7 @@ const IndexPage = () => {
         </div>
       </Section>
 
-      <Section>
+      <Section id="hubungi">
         <div className="text-center">
           <h3 className="title-section">Hubungi Kami</h3>
           <div className="stripes"></div>
@@ -247,6 +248,8 @@ const IndexPage = () => {
           </div>
         </div>
       </Section>
+            
+      <a href=""><img className="contact" src={WA} alt="wa"/></a>
     </Layout>
   )
 }

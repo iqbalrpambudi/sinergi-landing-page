@@ -61,22 +61,22 @@ const Navbar = ({ siteTitle }) => {
           </div>
           <ul className="navbar-nav ml-lg-auto">
             <li className="nav-item">
-              <a className="nav-link" href="/#">
-                PELAYANAN
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/#">
+              <a className="nav-link" href="#keunggulan">
                 KEUNGGULAN
               </a>
             </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#pelayanan">
+                PELAYANAN
+              </a>
+            </li>
             <li className="nav-item dropdown">
-              <a className="nav-link" href="/#">
+              <a className="nav-link" href="#cakupan">
                 CAKUPAN
               </a>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link" href="/#">
+              <a className="nav-link" href="#hubungi">
                 HUBUNGI KAMI
               </a>
             </li>

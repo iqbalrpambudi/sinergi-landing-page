@@ -1,8 +1,8 @@
 import React from "react"
 
-const Section = ({ children, color }) => {
+const Section = ({ children, color,id }) => {
   return (
-    <section style={{ backgroundColor: color || "white",padding:`3.25rem 0` }}>
+    <section id={id} style={{ backgroundColor: color || "white",padding:`3.25rem 0` }}>
       <div
         style={{
           margin: `0 auto`,

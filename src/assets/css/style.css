@@ -276,9 +276,37 @@ _:-ms-input-placeholder .c-crd__img img,
   height: 100%;
 }
 
+.contact {
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  z-index: 1000;
+  max-width: 75px;
+  max-height: 75px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.contact:hover {
+  bottom: 1.5rem;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
 footer {
-  height: 300px;
-  background-color: #f1f1f1;
+  padding: 2rem 4rem;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  background-color: #e0e0e0;
 }
 
 @media screen and (max-width: 920px) {
@@ -304,9 +332,35 @@ footer {
     line-height: 25px;
     color: #9f9f9f;
   }
+  footer {
+    padding: 1rem 1rem;
+    text-align: center;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    background-color: #e0e0e0;
+  }
 }
 
 @media screen and (max-width: 620px) {
+  .contact {
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    z-index: 1000;
+    max-width: 60px;
+    max-height: 60px;
+  }
   .card-title {
     font-family: "Poppins";
     font-weight: 700;

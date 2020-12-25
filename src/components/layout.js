@@ -32,9 +32,8 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <div>Perum Graha Jayanti no 2&3, Cijambe, Parungkuda, Sukabumi</div>
+          <div>Product : <a href="https://lide.dev" target="_blank">Lide Dev</a></div>
         </footer>
       </div>
     </>
