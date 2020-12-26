@@ -25,6 +25,7 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "react-hook-google-maps": "0.0.3",
+    "react-marquee-slider": "^1.1.2",
     "react-multi-carousel": "^2.6.1"
   },
   "devDependencies": {

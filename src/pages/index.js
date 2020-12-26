@@ -10,6 +10,7 @@ import WA from '../images/whatsapp.svg'
 import "../assets/css/style.css"
 import "react-multi-carousel/lib/styles.css"
 
+
 const IndexPage = () => {
   const [location, setLocation] = useState("sukabumi")
 
