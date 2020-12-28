@@ -128,9 +128,9 @@ const IndexPage = ({ data }) => {
         >
           <div className="c-crd">
             <a className="c-crd__wrap" href="#">
-              <div className="c-crd__img">
+              {/* <div className="c-crd__img">
                 <img src="https://unsplash.it/400/209" alt="images" />
-              </div>
+              </div> */}
               <div className="c-crd__btm">
                 <h3 className="card-title">Sedot WC</h3>
                 <p className="card-description">
@@ -143,9 +143,9 @@ const IndexPage = ({ data }) => {
 
           <div className="c-crd">
             <a className="c-crd__wrap" href="#">
-              <div className="c-crd__img">
+              {/* <div className="c-crd__img">
                 <img src="https://unsplash.it/400/209" alt="images" />
-              </div>
+              </div> */}
               <div className="c-crd__btm">
                 <h3 className="card-title">Sedot WC Mampet</h3>
                 <p className="card-description">
@@ -158,9 +158,9 @@ const IndexPage = ({ data }) => {
 
           <div className="c-crd">
             <a className="c-crd__wrap" href="#">
-              <div className="c-crd__img">
+              {/* <div className="c-crd__img">
                 <img src="https://unsplash.it/400/209" alt="images" />
-              </div>
+              </div> */}
               <div className="c-crd__btm">
                 <h3 className="card-title">Service Toilet</h3>
                 <p className="card-description">
@@ -173,9 +173,9 @@ const IndexPage = ({ data }) => {
 
           <div className="c-crd">
             <a className="c-crd__wrap" href="#">
-              <div className="c-crd__img">
+              {/* <div className="c-crd__img">
                 <img src="https://unsplash.it/400/209" alt="sedot wc" />
-              </div>
+              </div> */}
               <div className="c-crd__btm">
                 <h3 className="card-title">Pembuatan Septic Tank</h3>
                 <p className="card-description">
@@ -188,9 +188,9 @@ const IndexPage = ({ data }) => {
 
           <div className="c-crd">
             <a className="c-crd__wrap" href="#">
-              <div className="c-crd__img">
+              {/* <div className="c-crd__img">
                 <img src="https://unsplash.it/400/209" alt="sedot wc" />
-              </div>
+              </div> */}
               <div className="c-crd__btm">
                 <h3 className="card-title">Sedot Limbah Non B3</h3>
                 <p className="card-description">
