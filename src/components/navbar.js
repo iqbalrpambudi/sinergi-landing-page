@@ -16,17 +16,16 @@ const Navbar = ({ siteTitle }) => {
       }
     }
   `)
-  console.log(data)
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white">
       <div className="container">
-        <a className="navbar-brand" href="/#">
+        <a className="navbar-brand d-flex align-items-center" href="/#">
           <Img
-            className="headshot"
+            className="headshot mr-2"
             fixed={data.file.childImageSharp.fixed}
-            alt=""
-          />
+            alt="logo"
+          /><b>PT SINERGI INTI SUKSES MANDIRI</b>
         </a>
         <button
           className="navbar-toggler"
@@ -70,12 +69,12 @@ const Navbar = ({ siteTitle }) => {
                 PELAYANAN
               </a>
             </li>
-            <li className="nav-item dropdown">
+            <li className="nav-item">
               <a className="nav-link" href="#cakupan">
                 CAKUPAN
               </a>
             </li>
-            <li className="nav-item dropdown">
+            <li className="nav-item">
               <a className="nav-link" href="#hubungi">
                 HUBUNGI KAMI
               </a>

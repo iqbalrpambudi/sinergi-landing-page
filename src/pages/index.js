@@ -6,12 +6,11 @@ import { Pic1, Pic2, Pic3, Pic4, Pic5 } from "../components/images"
 import SEO from "../components/seo"
 import Carousel from "react-multi-carousel"
 import Map from "../components/map.js"
-import WA from '../images/whatsapp.svg'
+import WA from "../images/whatsapp.svg"
 import "../assets/css/style.css"
 import "react-multi-carousel/lib/styles.css"
 
-
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
   const [location, setLocation] = useState("sukabumi")
 
   const responsive = {
@@ -46,6 +45,11 @@ const IndexPage = () => {
       <SEO title="Home" />
 
       {/* Banner */}
+      <div className="d-flex justify-content-center py-2">
+        <marquee>
+          <b>BUKA setiap hari kerja dari jam 08.00 - 20.00</b>
+        </marquee>
+      </div>
       <Section id="home">
         <div className="row justify-content-center">
           <div
@@ -58,9 +62,6 @@ const IndexPage = () => {
           >
             <h1 className="title-screen">Saya memberikan yang terbaik.</h1>
             <div className="stripes"></div>
-            <p className="title-description">
-              Kami mengutamakan kualitas dan kepuasan pelanggan .
-            </p>
           </div>
           <div className="col-lg-5 col-md-9">
             <Image name="gatsby-handshake.png" />
@@ -133,8 +134,23 @@ const IndexPage = () => {
               <div className="c-crd__btm">
                 <h3 className="card-title">Sedot WC</h3>
                 <p className="card-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-                  alias cumque exercitationem quasi dolor ipsa!
+                  Septic tank anda penuh? Hubungi saya, saya siap datang dan
+                  menuntaskan masalah anda
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div className="c-crd">
+            <a className="c-crd__wrap" href="#">
+              <div className="c-crd__img">
+                <img src="https://unsplash.it/400/209" alt="images" />
+              </div>
+              <div className="c-crd__btm">
+                <h3 className="card-title">Sedot WC Mampet</h3>
+                <p className="card-description">
+                  WC anda mampet? Hubungi saya, saya siap datang dan menuntaskan
+                  masalah anda.
                 </p>
               </div>
             </a>
@@ -148,8 +164,8 @@ const IndexPage = () => {
               <div className="c-crd__btm">
                 <h3 className="card-title">Service Toilet</h3>
                 <p className="card-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-                  alias cumque exercitationem quasi dolor ipsa!
+                  WC anda mengalami kerusakan? Hubingi saya, saya akan
+                  menuntaskan masalah pada WC anda.
                 </p>
               </div>
             </a>
@@ -163,8 +179,8 @@ const IndexPage = () => {
               <div className="c-crd__btm">
                 <h3 className="card-title">Pembuatan Septic Tank</h3>
                 <p className="card-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-                  alias cumque exercitationem quasi dolor ipsa!
+                  Anda butuh jasa pembuatan septic tank? Hibungi saya, saya siap
+                  datang dan membuatkan septic tank untuk anda.
                 </p>
               </div>
             </a>
@@ -173,13 +189,13 @@ const IndexPage = () => {
           <div className="c-crd">
             <a className="c-crd__wrap" href="#">
               <div className="c-crd__img">
-                <img src="https://unsplash.it/400/209" alt="sedot wc"/>
+                <img src="https://unsplash.it/400/209" alt="sedot wc" />
               </div>
               <div className="c-crd__btm">
                 <h3 className="card-title">Sedot Limbah Non B3</h3>
                 <p className="card-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-                  alias cumque exercitationem quasi dolor ipsa!
+                  Tampungan limbah anda penuh? Hubungi saya, saya siap datang
+                  untuk menuntaskan masalah anda.
                 </p>
               </div>
             </a>
@@ -211,19 +227,19 @@ const IndexPage = () => {
       <Section color="#f1f1f1">
         <div className="image-container">
           <div className="image-card">
-            <img src={Pic1} alt="" alt="sedot wc"/>
+            <img src={Pic1} alt="sedot wc1" />
           </div>
           <div className="image-card">
-            <img src={Pic2} alt="" alt="sedot wc"/>
+            <img src={Pic2} alt="sedot wc" />
           </div>
           <div className="image-card">
-            <img src={Pic3} alt="" alt="sedot wc"/>
+            <img src={Pic3} alt="sedot wc" />
           </div>
           <div className="image-card">
-            <img src={Pic4} alt="" alt="sedot wc"/>
+            <img src={Pic4} alt="sedot wc" />
           </div>
           <div className="image-card">
-            <img src={Pic5} alt="" alt="sedot wc"/>
+            <img src={Pic5} alt="sedot wc" />
           </div>
         </div>
       </Section>
@@ -234,7 +250,7 @@ const IndexPage = () => {
           <div className="stripes"></div>
         </div>
 
-        <div className="row" style={{ height: `400px`,marginTop:`2rem` }}>
+        <div className="row" style={{ height: `400px`, marginTop: `2rem` }}>
           <div className="col-md-6 d-flex justify-content-center align-items-center">
             <div className="d-flex flex-column justify-content-center align-items-center p-5 shadow mb-4">
               <h6>Whatsapp/Telephone</h6>
@@ -249,8 +265,13 @@ const IndexPage = () => {
           </div>
         </div>
       </Section>
-            
-      <a href=""><img className="contact" src={WA} alt="wa"/></a>
+
+      <a
+        target="_blank"
+        href="https://wa.me/6281310040417?text=Permisi%saya%20mau%20pesan%20jasa%20sedot%20WC"
+      >
+        <img className="contact" src={WA} alt="wa" />
+      </a>
     </Layout>
   )
 }

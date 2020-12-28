@@ -20,11 +20,27 @@ nav {
 
 .nav-item {
   margin: 0;
+  position: relative;
   a {
-    font-size: 16px !important;
+    font-size: 14px !important;
     font-weight: 600 !important;
     color: #2a6693 !important;
   }
+}
+.nav-item::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  background-color: rgb(74, 140, 216);
+  z-index: 20;
+  transform: scaleX(0);
+  transition: 0.2s ease-in-out;
+}
+.nav-item:hover::before {
+  transform: scaleX(1);
+  transition: 0.2s ease-in-out;
 }
 
 .title-screen {
@@ -121,7 +137,9 @@ img {
   background-color: white;
   box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.05);
   width: 100%;
+  min-height:375px
 }
+
 a.c-crd__wrap {
   display: block;
   color: slategrey;
@@ -205,11 +223,10 @@ _:-ms-input-placeholder .c-crd__img img,
     }
   }
 }
-.image-container{
+.image-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  
 }
 .image-card {
   margin-bottom: 2rem;
@@ -224,31 +241,36 @@ _:-ms-input-placeholder .c-crd__img img,
   }
 }
 
-.contact{
+.contact {
   position: fixed;
-  bottom: 1rem;
+  bottom: 2.5rem;
   right: 2rem;
   z-index: 1000;
   max-width: 75px;
   max-height: 75px;
-  transition: 0.2s ease-in-out
+  transition: 0.2s ease-in-out;
 }
-.contact:hover{
-  bottom: 1.5rem;
-  transform: scale(1.1,1.1);
-  transition: .2s ease-in-out;
+.contact:hover {
+  bottom: 3rem;
+  transform: scale(1.1, 1.1);
+  transition: 0.2s ease-in-out;
 }
-footer{
+footer {
   padding: 2rem 4rem;
   display: flex !important;
   justify-content: space-between !important;
-  align-items: center !important;;
+  align-items: center !important;
   background-color: #e0e0e0;
 }
+
 // Responsive
 @media screen and (max-width: 920px) {
   header {
     display: none !important;
+  }
+
+  .nav-item::before {
+    bottom: 0 !important;
   }
 
   .flex-container {
@@ -273,24 +295,30 @@ footer{
     color: #9f9f9f;
   }
 
-  footer{
+  footer {
     padding: 1rem 1rem;
     text-align: center;
     display: flex !important;
     flex-direction: column;
     justify-content: space-between !important;
-    align-items: center !important;;
+    align-items: center !important;
     background-color: #e0e0e0;
   }
 }
+
 @media screen and (max-width: 620px) {
-  .contact{
+  .contact {
     position: fixed;
-    bottom: 1rem;
+    bottom: 0rem;
     right: 2rem;
     z-index: 1000;
     max-width: 60px;
     max-height: 60px;
+  }
+  .contact:hover {
+    bottom: 1rem;
+    transform: scale(1.1, 1.1);
+    transition: 0.2s ease-in-out;
   }
   .card-title {
     font-family: "Poppins";
@@ -332,7 +360,16 @@ footer{
       }
     }
   }
+
+  .title-screen {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    line-height: 62px;
+    font-size: 40px;
+    margin: 1.5rem 0;
+  }
 }
+
 @media screen and (min-width: 38em) {
   .c-crds {
     display: flex;
