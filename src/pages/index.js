@@ -268,7 +268,7 @@ const IndexPage = ({ data }) => {
 
       <a
         target="_blank"
-        href="https://wa.me/6281310040417?text=Permisi%saya%20mau%20pesan%20jasa%20sedot%20WC"
+        href="https://wa.me/6281310040417?text=Permisi%20saya%20mau%20jasa%20sedot%20WC"
       >
         <img className="contact" src={WA} alt="wa" />
       </a>
