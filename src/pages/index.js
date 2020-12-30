@@ -246,7 +246,7 @@ const IndexPage = ({ data }) => {
 
       <Section id="hubungi">
         <div className="text-center">
-          <h3 className="title-section">Hubungi Kami</h3>
+          <h3 className="title-section">Hubungi</h3>
           <div className="stripes"></div>
         </div>
 
