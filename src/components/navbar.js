@@ -76,7 +76,7 @@ const Navbar = ({ siteTitle }) => {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#hubungi">
-                HUBUNGI KAMI
+                HUBUNGI
               </a>
             </li>
           </ul>
